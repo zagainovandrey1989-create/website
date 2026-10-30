@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <rect width="1024" height="1024" fill="#14203A"/>
+  <!-- faint blueprint grid -->
+  <g stroke="#22314F" stroke-width="2">
+    <path d="M0 256H1024M0 512H1024M0 768H1024M256 0V1024M512 0V1024M768 0V1024"/>
+  </g>
+  <!-- A-shaped node network: apex, two base nodes, crossbar -->
+  <g stroke="#E6ECF5" stroke-width="22" stroke-linecap="round" fill="none">
+    <path d="M512 250 L310 740"/>
+    <path d="M512 250 L714 740"/>
+    <path d="M395 535 L629 535"/>
+  </g>
+  <!-- Z-stroke as a signal path through the crossbar -->
+  <path d="M395 535 L629 535" stroke="#E3A345" stroke-width="22" stroke-linecap="round" stroke-dasharray="2 46"/>
+  <g fill="#E6ECF5">
+    <circle cx="512" cy="250" r="46"/>
+    <circle cx="310" cy="740" r="46"/>
+    <circle cx="395" cy="535" r="30"/>
+  </g>
+  <circle cx="714" cy="740" r="58" fill="#E3A345"/>
+  <circle cx="714" cy="740" r="96" fill="none" stroke="#E3A345" stroke-width="8" opacity="0.55"/>
+  <circle cx="629" cy="535" r="30" fill="#E3A345"/>
+</svg>
