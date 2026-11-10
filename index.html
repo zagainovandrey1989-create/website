@@ -70,6 +70,9 @@ button{font:inherit;color:inherit}
 /* figures ride the exact same zoom as the photo, so they never slide off their shadows */
 
 .figwrap{position:absolute;inset:0;pointer-events:none}
+.figwrap{container-type:size}
+.pin{--w:max(100cqw,calc(100cqh*1.791045));--h:max(100cqh,calc(100cqw/1.791045));left:calc((100cqw - var(--w))*var(--ox) + var(--ix)*var(--w))!important;top:calc((100cqh - var(--h))*.5 + var(--iy)*var(--h))!important}
+
 .fig{opacity:0;transition:opacity .6s ease .1s}
 .scene.on .fig{opacity:1;transform:none}
 @keyframes breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4px) scale(1.004)}}
@@ -528,7 +531,7 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
 </section>
 
 <script>/* mobile: Paris figure closer to the Eiffel Tower */
-if(innerWidth<=900){const s3=document.getElementById('s3');s3.style.setProperty('--fx','40%');s3.style.setProperty('--figmask','url(img/s2m_fig.webp?v=1)');const b=s3.querySelector('img.layer.bg'),f=s3.querySelector('img.layer.fig'),l=s3.querySelector('.lotus[data-ix]');if(b)b.src='img/s2m_bg.webp?v=1';if(f)f.src='img/s2m_fig.webp?v=1';if(l)l.dataset.ix='0.441';l.dataset.iy='0.543'}</script>
+if(innerWidth<=900){const s3=document.getElementById('s3');s3.style.setProperty('--fx','40%');s3.style.setProperty('--figmask','url(img/s2m_fig.webp?v=1)');const b=s3.querySelector('img.layer.bg'),f=s3.querySelector('img.layer.fig'),l=s3.querySelector('.lotus[data-ix]');if(b)b.src='img/s2m_bg.webp?v=1';if(f)f.src='img/s2m_fig.webp?v=1';if(l)l.dataset.ix='0.441';l.dataset.iy='0.551'}</script>
 <section class="scene" id="s4" data-fx="leaves" data-note="3" style="--figmask:url(img/s4_fig.webp?v=2);--fx:53%;--g:1.9">
   <img class="layer bg" src="img/s4_bg.webp?v=2" alt="Sydney of the future: harbour promenade with the Opera House, jacaranda petals and a robot dog" loading="lazy">
   <div class="figwrap"><div class="bfly" data-ix="0.474" data-iy="0.6" style="--b:46px" aria-hidden="true"><div class="bf-path"><div class="bf-body"><svg class="wing l" viewBox="0 -45 50 90"><defs><linearGradient id="b46lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff8e6"/><stop offset=".35" stop-color="#f4d38f"/><stop offset=".8" stop-color="#8fd3ff" stop-opacity=".75"/><stop offset="1" stop-color="#6fb8ff" stop-opacity=".35"/></linearGradient><linearGradient id="b46lh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9f0" stop-opacity="0"/><stop offset=".6" stop-color="#c9a7ff" stop-opacity=".55"/><stop offset="1" stop-color="#7fe0ff" stop-opacity=".2"/></linearGradient></defs><g transform="scale(-1,1) translate(-50,0)"><path d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z" fill="url(#b46lg)"/><path d="M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46lg)"/><path class="iri" d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46lh)"/><path d="M2 -3 C14 -14 28 -26 42 -28 M2 -3 C16 -8 30 -12 44 -14 M2 3 C12 12 22 22 28 32" stroke="#fff6e0" stroke-opacity=".55" stroke-width=".8" fill="none"/><circle cx="36" cy="-26" r="3.2" fill="#fffaf0" opacity=".85"/><circle cx="22" cy="24" r="2.2" fill="#fffaf0" opacity=".7"/></g></svg><svg class="wing r" viewBox="0 -45 50 90"><defs><linearGradient id="b46rg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff8e6"/><stop offset=".35" stop-color="#f4d38f"/><stop offset=".8" stop-color="#8fd3ff" stop-opacity=".75"/><stop offset="1" stop-color="#6fb8ff" stop-opacity=".35"/></linearGradient><linearGradient id="b46rh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9f0" stop-opacity="0"/><stop offset=".6" stop-color="#c9a7ff" stop-opacity=".55"/><stop offset="1" stop-color="#7fe0ff" stop-opacity=".2"/></linearGradient></defs><g transform=""><path d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z" fill="url(#b46rg)"/><path d="M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46rg)"/><path class="iri" d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46rh)"/><path d="M2 -3 C14 -14 28 -26 42 -28 M2 -3 C16 -8 30 -12 44 -14 M2 3 C12 12 22 22 28 32" stroke="#fff6e0" stroke-opacity=".55" stroke-width=".8" fill="none"/><circle cx="36" cy="-26" r="3.2" fill="#fffaf0" opacity=".85"/><circle cx="22" cy="24" r="2.2" fill="#fffaf0" opacity=".7"/></g></svg><svg class="torso" viewBox="-10 -45 20 90"><path d="M-1 -14 C-6 -26 -10 -34 -12 -40 M1 -14 C6 -26 10 -34 12 -40" stroke="#fff1cf" stroke-width="1.1" fill="none" stroke-linecap="round"/><circle cx="-12" cy="-40" r="1.8" fill="#fff6dc"/><circle cx="12" cy="-40" r="1.8" fill="#fff6dc"/><ellipse cx="0" cy="-10" rx="2.6" ry="3.4" fill="#fff6dc"/><ellipse cx="0" cy="8" rx="2.2" ry="15" fill="#ffefc7"/></svg></div></div></div><img class="layer fig" src="img/s4_fig.webp?v=2" alt="A digital little girl in a dress of light" loading="lazy"></div>
@@ -656,10 +659,9 @@ const wave=(()=>{const c=document.getElementById('wave');const off={to(){}};
  (function f(){if(auto&&!drag){ry+=.18;set()}requestAnimationFrame(f)})();})();
 /* pin elements to a point of the photo (same cover mapping as the background) */
 (()=>{const IW=1920,IH=1072;const els=[...document.querySelectorAll('[data-ix]')];if(!els.length)return;
- function place(){els.forEach(el=>{const box=el.parentElement,W=box.clientWidth,H=box.clientHeight;const pos=parseFloat(getComputedStyle(box.closest('.scene')).getPropertyValue('--fx'))||62;
-  const objx=innerWidth<=900?pos/100:.62;const k=Math.max(W/IW,H/IH),w=IW*k,h=IH*k,ox=(W-w)*objx,oy=(H-h)*.5;
-  el.style.left=(ox+parseFloat(el.dataset.ix)*w)+'px';el.style.top=(oy+parseFloat(el.dataset.iy)*h)+'px'})}
- place();addEventListener('resize',place);addEventListener('load',place);if(window.ResizeObserver){const ro=new ResizeObserver(place);new Set(els.map(e=>e.parentElement)).forEach(b=>ro.observe(b))}})();
+ function place(){els.forEach(el=>{const pos=parseFloat(getComputedStyle(el.closest('.scene')).getPropertyValue('--fx'))||60;
+  el.style.setProperty('--ox',innerWidth<=900?pos/100:.62);el.style.setProperty('--ix',el.dataset.ix);el.style.setProperty('--iy',el.dataset.iy);el.classList.add('pin')})}
+ place();addEventListener('resize',place);})();
 addEventListener('pointermove',e=>{window.__wm={x:e.clientX/innerWidth*2-1,y:e.clientY/innerHeight*2-1}},{passive:true});
 /* desktop: full-screen deck — one wheel step = one slide, animated transition */
 (()=>{
