@@ -574,7 +574,7 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
 
 <section class="scene wave-scene" id="s6" data-fx="stars" data-note="5" style="--fx:70%;--g:2.6">
   <div class="layer space" aria-hidden="true"></div>
-  <div class="dyson" aria-hidden="true"><span class="glow"></span><img src="img/s6_sun.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="dyson" aria-hidden="true"><span class="glow"></span><img data-src="img/s6_sun.webp" alt="" decoding="async"></div>
   <div class="shade"></div>
   <div class="year">Planet Earth<b>2626</b></div>
   <div class="copy">
@@ -922,6 +922,7 @@ window.__act=(function(){const seen=new WeakMap();const io=new IntersectionObser
  if(l!=='en')set(l);
 })();
 </script>
+<script>addEventListener("load",()=>setTimeout(()=>document.querySelectorAll("img[data-src]").forEach(i=>{i.src=i.dataset.src}),1200));</script>
 
 </body>
 </html>
