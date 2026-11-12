@@ -1,6 +1,6 @@
 /* Dyson sphere 3D (Hoberman-style expansion on hover). Requires THREE r128 + hobx.js */
 (function(){
-const box=document.querySelector('.dyson');if(!box||matchMedia('(max-width:900px)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches||!window.THREE||!THREE.EffectComposer)return;
+const box=document.querySelector('.dyson');if(!box||matchMedia('(prefers-reduced-motion: reduce)').matches||!window.THREE||!THREE.EffectComposer)return;
 const T=THREE;
 const cv=document.createElement('canvas');cv.className='dy3d';cv.setAttribute('aria-hidden','true');
 let ren;try{ren=new T.WebGLRenderer({canvas:cv,antialias:true,powerPreference:'high-performance'})}catch(e){return}
@@ -65,8 +65,9 @@ const host=box.closest('section')||box.parentNode;
 cv.style.cssText='position:absolute;z-index:1;mix-blend-mode:screen;pointer-events:none;opacity:0;transition:opacity 1.2s ease';
 const place=()=>{const r=box.getBoundingClientRect(),h=host.getBoundingClientRect(),k=1.45,w=r.width*k;cv.style.width=cv.style.height=w+'px';cv.style.left=(r.left-h.left+host.scrollLeft-(w-r.width)/2)+'px';cv.style.top=(r.top-h.top+host.scrollTop-(w-r.height)/2)+'px'};
 host.appendChild(cv);size();place();addEventListener('resize',()=>{size();place()});
-box.addEventListener('pointerenter',()=>{target=1});box.addEventListener('pointerleave',()=>{target=box.classList.contains('open')?1:0});box.addEventListener('click',()=>{setTimeout(()=>{if(box.classList.contains('open'))target=1},0)});
-box.addEventListener('focus',()=>{target=1});box.addEventListener('blur',()=>{target=box.classList.contains('open')?1:0});
+const HOV=matchMedia('(hover:hover)').matches;
+if(HOV){box.addEventListener('pointerenter',()=>{target=1});box.addEventListener('pointerleave',()=>{target=0});box.addEventListener('focus',()=>{target=1});box.addEventListener('blur',()=>{target=0})}
+else{const sy=()=>{target=box.classList.contains('open')?1:0;kick()};new MutationObserver(sy).observe(box,{attributes:true,attributeFilter:['class']})}
 const sec=box.closest('section');const upd=()=>{vis=!sec||sec.classList.contains('on')||sec.classList.contains('entering');if(vis){size();place();kick()}};new MutationObserver(upd).observe(sec||box,{attributes:true,attributeFilter:['class']});upd();
 document.addEventListener('visibilitychange',kick);
 draw();
