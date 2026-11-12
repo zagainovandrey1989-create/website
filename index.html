@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head><script>document.documentElement.classList.add("deck")</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Andrei Zagainov — software architect &amp; developer</title>
@@ -11,7 +11,24 @@
 <meta property="og:image" content="https://andreizagainov.com/img/s1_bg.webp">
 <link rel="canonical" href="https://andreizagainov.com/">
 <link rel="icon" type="image/png" href="img/favicon.png">
-<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="preload" href="/assets/fonts/unbounded-300-lat.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/unbounded-700-lat.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/manrope-600-lat.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/onest-400-lat.woff2" as="font" type="font/woff2" crossorigin><style>@font-face{font-family:'Unbounded';font-style:normal;font-weight:300;font-display:swap;src:url(/assets/fonts/unbounded-300-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Unbounded';font-style:normal;font-weight:300;font-display:swap;src:url(/assets/fonts/unbounded-300-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Unbounded';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/unbounded-500-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Unbounded';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/unbounded-500-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Unbounded';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/unbounded-700-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Unbounded';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/unbounded-700-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/manrope-500-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/manrope-500-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/manrope-600-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/manrope-600-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/manrope-700-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/manrope-700-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/onest-400-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/onest-400-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/onest-500-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/onest-500-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/onest-600-cyr.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/onest-600-lat.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
 <style>
 /* Layout: full-screen scroll story, one scene per section; figures float on their own layer above each city */
 :root{
@@ -430,17 +447,17 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
   .bg,.fig,.rv{transition:none!important;animation:none!important;transform:none!important;opacity:1!important}
   .sweep{display:none}
 }
-</style>
+@media (max-width:480px){#sndt.nav-hide{display:none!important}}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.dots{gap:14px}.dots a{position:relative}.dots a::after{content:'';position:absolute;inset:-7px}</style>
 </head>
 <body>
 
 <header class="top">
-  <a class="brand" href="#s1" aria-label="Back to start">
+  <a class="brand" href="#s1" aria-label="Andrei Zagainov — back to start">
     <img class="blogo" src="img/logo.webp" alt="" aria-hidden="true"><small class="nav-hide">Andrei Zagainov<br>Software architect &amp; developer</small>
   </a>
   <div class="tools">
-    <div class="lng" id="lng"><button class="lng-b" aria-haspopup="true" aria-label="Language"><span class="lng-cur">EN</span><i aria-hidden="true"></i></button><div class="lng-m" role="menu"><button data-l="en" class="on" lang="en">English</button><button data-l="he" lang="he">עברית</button><button data-l="de" lang="de">Deutsch</button><button data-l="fr" lang="fr">Français</button><button data-l="es" lang="es">Español</button><button data-l="pt" lang="pt">Português</button><button data-l="zh" lang="zh">中文</button><button data-l="ar" lang="ar">العربية</button></div></div>
-    <button class="snd" id="snd" aria-pressed="false" aria-label="Turn music on"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="nav-hide" id="sndt">Sound</span></button>
+    <div class="lng" id="lng"><button class="lng-b" aria-haspopup="true"><span class="lng-cur">EN</span><i aria-hidden="true"></i><span class="sr">, language</span></button><div class="lng-m" role="menu"><button data-l="en" class="on" lang="en">English</button><button data-l="he" lang="he">עברית</button><button data-l="de" lang="de">Deutsch</button><button data-l="fr" lang="fr">Français</button><button data-l="es" lang="es">Español</button><button data-l="pt" lang="pt">Português</button><button data-l="zh" lang="zh">中文</button><button data-l="ar" lang="ar">العربية</button></div></div>
+    <button class="snd" id="snd" aria-pressed="false" aria-label="Sound — turn music on"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="nav-hide" id="sndt">Sound</span></button>
     <a class="contact" href="#s6"><i aria-hidden="true"></i><span>Contact</span></a>
   </div>
 </header>
@@ -470,8 +487,8 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
 <script>/* mobile keeps its own butterfly point and size */if(innerWidth<=900){const b=document.getElementById('bfS1');if(b){b.dataset.ix='0.68';b.dataset.iy='0.712';b.style.setProperty('--b','26px')}}</script>
 
 <section class="scene" id="s2" data-fx="neural" data-note="1" style="--figmask:url(img/s3v2_fig.webp);--fx:56%;--g:1.6">
-  <img class="layer bg" src="img/s3v2_bg.webp" alt="Jerusalem of the future: Jaffa Gate and the Tower of David, Orthodox Jews and helper robots, buildings of Jerusalem stone" loading="lazy">
-  <div class="figwrap"><div class="cube3d" data-ix="0.530" data-iy="0.555" aria-hidden="true"><div class="half top"><i class="f0"></i><i class="f1"></i><i class="f2"></i><i class="f3"></i><i class="cap"></i></div><div class="half bot"><i class="f0"></i><i class="f1"></i><i class="f2"></i><i class="f3"></i><i class="cap"></i></div><span class="core"></span></div><img class="layer fig" src="img/s3v2_fig.webp" alt="A digital man in a suit of light gestures towards the city of the future" loading="lazy"></div>
+  <img class="layer bg" data-ld="img/s3v2_bg.webp" alt="Jerusalem of the future: Jaffa Gate and the Tower of David, Orthodox Jews and helper robots, buildings of Jerusalem stone">
+  <div class="figwrap"><div class="cube3d" data-ix="0.530" data-iy="0.555" aria-hidden="true"><div class="half top"><i class="f0"></i><i class="f1"></i><i class="f2"></i><i class="f3"></i><i class="cap"></i></div><div class="half bot"><i class="f0"></i><i class="f1"></i><i class="f2"></i><i class="f3"></i><i class="cap"></i></div><span class="core"></span></div><img class="layer fig" data-ld="img/s3v2_fig.webp" alt="A digital man in a suit of light gestures towards the city of the future"></div>
   <div class="shade"></div>
   <div class="year">Jerusalem<b>2126</b></div>
   <div class="copy">
@@ -487,9 +504,9 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
       <small class="kicker">Selected work</small>
       <button aria-expanded="false"><b>IVEXA — a private AI assistant I designed and built</b><span>In daily use for a year · US patent applications filed</span><span class="more">Self-hosted and private by design: long-term memory, a task engine that tests its own results, Face ID approvals for critical actions, Windows and iPhone apps. Technical details are confidential. Tap a screen to enlarge.</span></button>
       <div class="shots">
-        <button class="work" data-src="img/ivexa/tasks_en.webp" data-cap="IVEXA — tasks"><img src="img/ivexa/tasks_en.webp" alt="IVEXA — tasks" loading="lazy"><span>Tasks</span></button>
-        <button class="work" data-src="img/ivexa/confirm_en.webp" data-cap="IVEXA — action approval"><img src="img/ivexa/confirm_en.webp" alt="IVEXA — action approval" loading="lazy"><span>Approval</span></button>
-        <button class="work" data-src="img/ivexa/year_en.webp" data-cap="IVEXA — a year in use"><img src="img/ivexa/year_en.webp" alt="IVEXA — a year in use" loading="lazy"><span>A year in use</span></button>
+        <button class="work" data-src="img/ivexa/tasks_en.webp" data-cap="IVEXA — tasks"><img data-ld="img/ivexa/tasks_en.webp" alt="IVEXA — tasks"><span>Tasks</span></button>
+        <button class="work" data-src="img/ivexa/confirm_en.webp" data-cap="IVEXA — action approval"><img data-ld="img/ivexa/confirm_en.webp" alt="IVEXA — action approval"><span>Approval</span></button>
+        <button class="work" data-src="img/ivexa/year_en.webp" data-cap="IVEXA — a year in use"><img data-ld="img/ivexa/year_en.webp" alt="IVEXA — a year in use"><span>A year in use</span></button>
       </div>
     </div>
   </div>
@@ -497,14 +514,14 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
 </section>
 
 <section class="scene" id="s3" data-fx="trails" data-note="2" style="--figmask:url(img/s2v2_fig.webp?v=3);--fx:70%;--g:1.3">
-  <img class="layer bg" src="img/s2v2_bg.webp?v=3" alt="Paris of the future at sunset, the Eiffel Tower under a glowing network of lines" loading="lazy">
+  <img class="layer bg" data-ld="img/s2v2_bg.webp?v=3" alt="Paris of the future at sunset, the Eiffel Tower under a glowing network of lines">
   <div class="figwrap"><div class="lotus" data-ix="0.611" data-iy="0.543" style="--b:54px" aria-hidden="true"><div class="lt-float"><svg viewBox="-50 -62 100 72"><defs>
 <linearGradient id="ltO" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff3d6" stop-opacity=".95"/><stop offset=".5" stop-color="#9fd6ff" stop-opacity=".55"/><stop offset="1" stop-color="#c9b4ff" stop-opacity=".25"/></linearGradient>
 <linearGradient id="ltI" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff8e8"/><stop offset=".6" stop-color="#f4d38f" stop-opacity=".8"/><stop offset="1" stop-color="#ffd7ef" stop-opacity=".35"/></linearGradient>
 <radialGradient id="ltC"><stop offset="0" stop-color="#fffdf5"/><stop offset=".4" stop-color="#ffe6a8" stop-opacity=".9"/><stop offset="1" stop-color="#f4d38f" stop-opacity="0"/></radialGradient></defs>
 <ellipse cx="0" cy="2" rx="26" ry="4" fill="#9fd6ff" opacity=".25"/>
 <g class="lt-o"><path class="po" data-k="-3.00" d="M0 0 C-13 -16.099999999999998 -9.1 -39.1 0 -46 C9.1 -39.1 13 -16.099999999999998 0 0Z" fill="url(#ltO)"/><path class="po" data-k="-2.00" d="M0 0 C-13 -16.099999999999998 -9.1 -39.1 0 -46 C9.1 -39.1 13 -16.099999999999998 0 0Z" fill="url(#ltO)"/><path class="po" data-k="-1.00" d="M0 0 C-13 -16.099999999999998 -9.1 -39.1 0 -46 C9.1 -39.1 13 -16.099999999999998 0 0Z" fill="url(#ltO)"/><path class="po" data-k="0.00" d="M0 0 C-13 -16.099999999999998 -9.1 -39.1 0 -46 C9.1 -39.1 13 -16.099999999999998 0 0Z" fill="url(#ltO)"/><path class="po" data-k="1.00" d="M0 0 C-13 -16.099999999999998 -9.1 -39.1 0 -46 C9.1 -39.1 13 -16.099999999999998 0 0Z" fill="url(#ltO)"/><path class="po" data-k="2.00" d="M0 0 C-13 -16.099999999999998 -9.1 -39.1 0 -46 C9.1 -39.1 13 -16.099999999999998 0 0Z" fill="url(#ltO)"/><path class="po" data-k="3.00" d="M0 0 C-13 -16.099999999999998 -9.1 -39.1 0 -46 C9.1 -39.1 13 -16.099999999999998 0 0Z" fill="url(#ltO)"/></g><g class="lt-i"><path class="pi" data-k="-2.00" d="M0 0 C-10 -11.899999999999999 -7.0 -28.9 0 -34 C7.0 -28.9 10 -11.899999999999999 0 0Z" fill="url(#ltI)"/><path class="pi" data-k="-1.00" d="M0 0 C-10 -11.899999999999999 -7.0 -28.9 0 -34 C7.0 -28.9 10 -11.899999999999999 0 0Z" fill="url(#ltI)"/><path class="pi" data-k="0.00" d="M0 0 C-10 -11.899999999999999 -7.0 -28.9 0 -34 C7.0 -28.9 10 -11.899999999999999 0 0Z" fill="url(#ltI)"/><path class="pi" data-k="1.00" d="M0 0 C-10 -11.899999999999999 -7.0 -28.9 0 -34 C7.0 -28.9 10 -11.899999999999999 0 0Z" fill="url(#ltI)"/><path class="pi" data-k="2.00" d="M0 0 C-10 -11.899999999999999 -7.0 -28.9 0 -34 C7.0 -28.9 10 -11.899999999999999 0 0Z" fill="url(#ltI)"/></g>
-<circle class="lt-core" cx="0" cy="-14" r="12" fill="url(#ltC)"/></svg></div></div><img class="layer fig" src="img/s2v2_fig.webp?v=3" alt="A digital woman in a dress of light gestures towards the city" loading="lazy"></div>
+<circle class="lt-core" cx="0" cy="-14" r="12" fill="url(#ltC)"/></svg></div></div><img class="layer fig" data-ld="img/s2v2_fig.webp?v=3" alt="A digital woman in a dress of light gestures towards the city"></div>
   <div class="shade"></div>
   <div class="year">Paris<b>2226</b></div>
   <div class="copy">
@@ -521,9 +538,9 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
       <small class="kicker">Selected work</small>
       <button aria-expanded="false"><b>EKS — electronic utility services platform</b><span>Residents, management companies and the city in one system</span><span class="more">Residents file and track requests from a phone or PC, management companies assign staff and deadlines, the city audits how requests are handled. Fully built and tested with real companies. Tap a screen to enlarge.</span></button>
       <div class="shots">
-        <button class="work" data-src="img/eks/admin_en.webp" data-cap="EKS — city administration oversight"><img src="img/eks/admin_en.webp" alt="City administration oversight screen" loading="lazy"><span>City admin</span></button>
-        <button class="work" data-src="img/eks/uk_en.webp" data-cap="EKS — management company workspace"><img src="img/eks/uk_en.webp" alt="Management company workspace" loading="lazy"><span>Management co.</span></button>
-        <button class="work" data-src="img/eks/app_en.webp" data-cap="EKS — residents' app"><img src="img/eks/app_en.webp" alt="Residents' mobile app" loading="lazy"><span>Residents' app</span></button>
+        <button class="work" data-src="img/eks/admin_en.webp" data-cap="EKS — city administration oversight"><img data-ld="img/eks/admin_en.webp" alt="City administration oversight screen"><span>City admin</span></button>
+        <button class="work" data-src="img/eks/uk_en.webp" data-cap="EKS — management company workspace"><img data-ld="img/eks/uk_en.webp" alt="Management company workspace"><span>Management co.</span></button>
+        <button class="work" data-src="img/eks/app_en.webp" data-cap="EKS — residents' app"><img data-ld="img/eks/app_en.webp" alt="Residents' mobile app"><span>Residents' app</span></button>
       </div>
     </div>
   </div>
@@ -533,8 +550,8 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
 <script>/* mobile: Paris figure closer to the Eiffel Tower */
 if(innerWidth<=900){const s3=document.getElementById('s3');s3.style.setProperty('--fx','40%');s3.style.setProperty('--figmask','url(img/s2m_fig.webp?v=1)');const b=s3.querySelector('img.layer.bg'),f=s3.querySelector('img.layer.fig'),l=s3.querySelector('.lotus[data-ix]');if(b)b.src='img/s2m_bg.webp?v=1';if(f)f.src='img/s2m_fig.webp?v=1';if(l)l.dataset.ix='0.441';l.dataset.iy='0.551'}</script>
 <section class="scene" id="s4" data-fx="leaves" data-note="3" style="--figmask:url(img/s4_fig.webp?v=2);--fx:53%;--g:1.9">
-  <img class="layer bg" src="img/s4_bg.webp?v=2" alt="Sydney of the future: harbour promenade with the Opera House, jacaranda petals and a robot dog" loading="lazy">
-  <div class="figwrap"><div class="bfly" id="bfS4" data-ix="0.477" data-iy="0.618" style="--b:46px" aria-hidden="true"><div class="bf-path"><div class="bf-body"><svg class="wing l" viewBox="0 -45 50 90"><defs><linearGradient id="b46lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff8e6"/><stop offset=".35" stop-color="#f4d38f"/><stop offset=".8" stop-color="#8fd3ff" stop-opacity=".75"/><stop offset="1" stop-color="#6fb8ff" stop-opacity=".35"/></linearGradient><linearGradient id="b46lh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9f0" stop-opacity="0"/><stop offset=".6" stop-color="#c9a7ff" stop-opacity=".55"/><stop offset="1" stop-color="#7fe0ff" stop-opacity=".2"/></linearGradient></defs><g transform="scale(-1,1) translate(-50,0)"><path d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z" fill="url(#b46lg)"/><path d="M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46lg)"/><path class="iri" d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46lh)"/><path d="M2 -3 C14 -14 28 -26 42 -28 M2 -3 C16 -8 30 -12 44 -14 M2 3 C12 12 22 22 28 32" stroke="#fff6e0" stroke-opacity=".55" stroke-width=".8" fill="none"/><circle cx="36" cy="-26" r="3.2" fill="#fffaf0" opacity=".85"/><circle cx="22" cy="24" r="2.2" fill="#fffaf0" opacity=".7"/></g></svg><svg class="wing r" viewBox="0 -45 50 90"><defs><linearGradient id="b46rg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff8e6"/><stop offset=".35" stop-color="#f4d38f"/><stop offset=".8" stop-color="#8fd3ff" stop-opacity=".75"/><stop offset="1" stop-color="#6fb8ff" stop-opacity=".35"/></linearGradient><linearGradient id="b46rh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9f0" stop-opacity="0"/><stop offset=".6" stop-color="#c9a7ff" stop-opacity=".55"/><stop offset="1" stop-color="#7fe0ff" stop-opacity=".2"/></linearGradient></defs><g transform=""><path d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z" fill="url(#b46rg)"/><path d="M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46rg)"/><path class="iri" d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46rh)"/><path d="M2 -3 C14 -14 28 -26 42 -28 M2 -3 C16 -8 30 -12 44 -14 M2 3 C12 12 22 22 28 32" stroke="#fff6e0" stroke-opacity=".55" stroke-width=".8" fill="none"/><circle cx="36" cy="-26" r="3.2" fill="#fffaf0" opacity=".85"/><circle cx="22" cy="24" r="2.2" fill="#fffaf0" opacity=".7"/></g></svg><svg class="torso" viewBox="-10 -45 20 90"><path d="M-1 -14 C-6 -26 -10 -34 -12 -40 M1 -14 C6 -26 10 -34 12 -40" stroke="#fff1cf" stroke-width="1.1" fill="none" stroke-linecap="round"/><circle cx="-12" cy="-40" r="1.8" fill="#fff6dc"/><circle cx="12" cy="-40" r="1.8" fill="#fff6dc"/><ellipse cx="0" cy="-10" rx="2.6" ry="3.4" fill="#fff6dc"/><ellipse cx="0" cy="8" rx="2.2" ry="15" fill="#ffefc7"/></svg></div></div></div><img class="layer fig" src="img/s4_fig.webp?v=2" alt="A digital little girl in a dress of light" loading="lazy"></div>
+  <img class="layer bg" data-ld="img/s4_bg.webp?v=2" alt="Sydney of the future: harbour promenade with the Opera House, jacaranda petals and a robot dog">
+  <div class="figwrap"><div class="bfly" id="bfS4" data-ix="0.477" data-iy="0.618" style="--b:46px" aria-hidden="true"><div class="bf-path"><div class="bf-body"><svg class="wing l" viewBox="0 -45 50 90"><defs><linearGradient id="b46lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff8e6"/><stop offset=".35" stop-color="#f4d38f"/><stop offset=".8" stop-color="#8fd3ff" stop-opacity=".75"/><stop offset="1" stop-color="#6fb8ff" stop-opacity=".35"/></linearGradient><linearGradient id="b46lh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9f0" stop-opacity="0"/><stop offset=".6" stop-color="#c9a7ff" stop-opacity=".55"/><stop offset="1" stop-color="#7fe0ff" stop-opacity=".2"/></linearGradient></defs><g transform="scale(-1,1) translate(-50,0)"><path d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z" fill="url(#b46lg)"/><path d="M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46lg)"/><path class="iri" d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46lh)"/><path d="M2 -3 C14 -14 28 -26 42 -28 M2 -3 C16 -8 30 -12 44 -14 M2 3 C12 12 22 22 28 32" stroke="#fff6e0" stroke-opacity=".55" stroke-width=".8" fill="none"/><circle cx="36" cy="-26" r="3.2" fill="#fffaf0" opacity=".85"/><circle cx="22" cy="24" r="2.2" fill="#fffaf0" opacity=".7"/></g></svg><svg class="wing r" viewBox="0 -45 50 90"><defs><linearGradient id="b46rg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff8e6"/><stop offset=".35" stop-color="#f4d38f"/><stop offset=".8" stop-color="#8fd3ff" stop-opacity=".75"/><stop offset="1" stop-color="#6fb8ff" stop-opacity=".35"/></linearGradient><linearGradient id="b46rh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9f0" stop-opacity="0"/><stop offset=".6" stop-color="#c9a7ff" stop-opacity=".55"/><stop offset="1" stop-color="#7fe0ff" stop-opacity=".2"/></linearGradient></defs><g transform=""><path d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z" fill="url(#b46rg)"/><path d="M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46rg)"/><path class="iri" d="M1 -2 C8 -36 44 -46 47 -24 C49 -8 30 -2 1 -2Z M1 2 C10 6 36 14 33 32 C30 44 12 36 1 2Z" fill="url(#b46rh)"/><path d="M2 -3 C14 -14 28 -26 42 -28 M2 -3 C16 -8 30 -12 44 -14 M2 3 C12 12 22 22 28 32" stroke="#fff6e0" stroke-opacity=".55" stroke-width=".8" fill="none"/><circle cx="36" cy="-26" r="3.2" fill="#fffaf0" opacity=".85"/><circle cx="22" cy="24" r="2.2" fill="#fffaf0" opacity=".7"/></g></svg><svg class="torso" viewBox="-10 -45 20 90"><path d="M-1 -14 C-6 -26 -10 -34 -12 -40 M1 -14 C6 -26 10 -34 12 -40" stroke="#fff1cf" stroke-width="1.1" fill="none" stroke-linecap="round"/><circle cx="-12" cy="-40" r="1.8" fill="#fff6dc"/><circle cx="12" cy="-40" r="1.8" fill="#fff6dc"/><ellipse cx="0" cy="-10" rx="2.6" ry="3.4" fill="#fff6dc"/><ellipse cx="0" cy="8" rx="2.2" ry="15" fill="#ffefc7"/></svg></div></div></div><img class="layer fig" data-ld="img/s4_fig.webp?v=2" alt="A digital little girl in a dress of light"></div>
   <div class="shade"></div>
   <div class="year">Sydney<b>2326</b></div>
   <div class="copy">
@@ -546,10 +563,10 @@ if(innerWidth<=900){const s3=document.getElementById('s3');s3.style.setProperty(
       <small class="kicker">Selected work</small>
       <button aria-expanded="false"><b>Website and brand identity for a law practice</b><span>Website, mobile version, business cards and letterhead</span><span class="more">A strict premium style: a seal monogram, a site with a cinematic first screen, business cards and letterhead in one identity. Original in Russian. Tap a work to enlarge.</span></button>
       <div class="shots shots4">
-        <button class="work" data-src="img/works/adv_site.webp" data-cap="Law practice website — first screen"><img src="img/works/adv_site.webp" alt="Law practice website — first screen" loading="lazy"><span>Website</span></button>
-        <button class="work" data-src="img/works/adv_mobile.webp" data-cap="Law practice website — mobile"><img src="img/works/adv_mobile.webp" alt="Law practice website — mobile" loading="lazy"><span>Mobile</span></button>
-        <button class="work" data-src="img/works/adv_cards.webp" data-cap="Identity — business cards with the seal monogram"><img src="img/works/adv_cards.webp" alt="Business cards with the seal monogram" loading="lazy"><span>Cards</span></button>
-        <button class="work" data-src="img/works/adv_blank.webp" data-cap="Identity — letterhead"><img src="img/works/adv_blank.webp" alt="Letterhead" loading="lazy"><span>Letterhead</span></button>
+        <button class="work" data-src="img/works/adv_site.webp" data-cap="Law practice website — first screen"><img data-ld="img/works/adv_site.webp" alt="Law practice website — first screen"><span>Website</span></button>
+        <button class="work" data-src="img/works/adv_mobile.webp" data-cap="Law practice website — mobile"><img data-ld="img/works/adv_mobile.webp" alt="Law practice website — mobile"><span>Mobile</span></button>
+        <button class="work" data-src="img/works/adv_cards.webp" data-cap="Identity — business cards with the seal monogram"><img data-ld="img/works/adv_cards.webp" alt="Business cards with the seal monogram"><span>Cards</span></button>
+        <button class="work" data-src="img/works/adv_blank.webp" data-cap="Identity — letterhead"><img data-ld="img/works/adv_blank.webp" alt="Letterhead"><span>Letterhead</span></button>
       </div>
     </div>
   </div>
@@ -558,7 +575,7 @@ if(innerWidth<=900){const s3=document.getElementById('s3');s3.style.setProperty(
 <script>/* mobile keeps its own butterfly point */if(innerWidth<=900){const b=document.getElementById('bfS4');if(b){b.dataset.ix='0.474';b.dataset.iy='0.6'}}</script>
 
 <section class="scene" id="s5" data-fx="net" data-note="4" style="--fx:70%;--g:2.2">
-  <img class="layer bg" src="img/s5d_bg.webp?v=4" alt="A terrace overlooking the Dubai of the far future" loading="lazy">
+  <img class="layer bg" data-ld="img/s5d_bg.webp?v=4" alt="A terrace overlooking the Dubai of the far future">
   <div class="shade"></div>
   <div class="year">Dubai<b>2526</b></div>
   <div class="copy">
@@ -602,7 +619,6 @@ if(innerWidth<=900){const s3=document.getElementById('s3');s3.style.setProperty(
 </main>
 <footer><span>© 2026 Andrei Zagainov · Software development, AI and design</span><span>Andrei Zagainov · Israel</span><span>Remote, worldwide</span></footer>
 
-<script src="/assets/three.min.js"></script>
 <script>
 (()=>{
 const scenes=[...document.querySelectorAll('.scene')], dots=[...document.querySelectorAll('.dots a')];
@@ -619,7 +635,7 @@ scenes.forEach(s=>io.observe(s)); scenes[0].classList.add('on','building');setTi
  const wrap=n=>{[...n.childNodes].forEach(c=>{if(c.nodeType===3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(t));return}const sp=document.createElement('span');sp.className='w in';sp.style.animationDelay=(.25+k++*.09)+'s';sp.textContent=t;f.appendChild(sp)});c.replaceWith(f)}else if(c.nodeType===1&&!c.classList.contains('hroll'))wrap(c)})};
  wrap(h);h.classList.remove('rv');})();
 /* particle wave — ported from the IT Cybertronica home scene (three.js): 60x50 field of glowing points, the camera flies to a new angle on every slide */
-const wave=(()=>{const c=document.getElementById('wave');const off={to(){}};
+const buildWave=()=>{const c=document.getElementById('wave');const off={to(){}};
  if(!c||!window.THREE||matchMedia('(max-width:900px)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches){if(c)c.style.display='none';return off}
  const T=THREE,sc=new T.Scene(),cam=new T.PerspectiveCamera(45,1,1,9000),ren=new T.WebGLRenderer({canvas:c,antialias:true,alpha:true});
  const g=new T.BufferGeometry(),pos=[],scl=[],col=[];
@@ -650,7 +666,11 @@ const wave=(()=>{const c=document.getElementById('wave');const off={to(){}};
  document.addEventListener('visibilitychange',()=>run(!document.hidden&&cur===LAST));
  let cur=0;
  return{to(n){cur=n;if(n===LAST){size();cam.position.set(-900,320,6200);cam.rotation.set(R(-3),R(-60),0);tw={st:performance.now(),p0:cam.position.clone(),p1:new T.Vector3(400,170,4600),r0:cam.rotation.clone(),r1:{x:R(-3),y:R(-45),z:0}};run(true)}else run(false)}};
-})();
+};
+const wave={_r:null,_n:0,to(n){this._n=n;if(this._r)this._r.to(n)}};
+(()=>{const c=document.getElementById('wave');if(!c)return;if(matchMedia('(max-width:900px)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches){c.style.display='none';return}
+ const go=()=>{const s=document.createElement('script');s.src='/assets/three.min.js';s.onload=()=>{wave._r=buildWave();if(wave._n)wave._r.to(wave._n)};document.head.appendChild(s)};
+ document.readyState==='complete'?go():addEventListener('load',go,{once:true})})();
 /* puzzle cube: drag to turn, slow auto-spin */
 (()=>{const c=document.querySelector('.cuber');if(!c)return;const inn=c.querySelector('.cuber-in');let rx=-24,ry=35,drag=null,auto=true;
  const set=()=>inn.style.transform=`rotateX(${rx}deg) rotateY(${ry}deg)`;
@@ -746,7 +766,7 @@ const music=(()=>{
     e.a.play().then(()=>ramp(e,VOL,2500)).catch(()=>{});current=e;
     timer=setTimeout(()=>stop(2500),((t.dur||18)-2.5)*1000); }
   const btn=document.getElementById('snd');
-  btn.addEventListener('click',()=>{init();on=!on;btn.setAttribute('aria-pressed',on);btn.setAttribute('aria-label',on?'Turn music off':'Turn music on');
+  btn.addEventListener('click',()=>{init();on=!on;btn.setAttribute('aria-pressed',on);btn.setAttribute('aria-label',on?'Sound — turn music off':'Sound — turn music on');
     if(on){ctx.resume();if(!els){els=[mk(),mk()];const w=els[cur];w.a.src=tracks[(idx+1)%tracks.length].src;w.a.play().then(()=>{if(current!==w)w.a.pause()}).catch(()=>{})}scene(idx)}else stop(600)});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop(200)});
   return {chime,scene};
@@ -929,5 +949,6 @@ window.__act=(function(){const seen=new WeakMap();const io=new IntersectionObser
 </script>
 <script>addEventListener("load",()=>setTimeout(()=>document.querySelectorAll("img[data-src]").forEach(i=>{i.src=i.dataset.src}),1200));</script>
 
+<script>(()=>{const go=()=>document.querySelectorAll("img[data-ld]").forEach(i=>{i.src=i.dataset.ld;i.removeAttribute("data-ld")});document.readyState==="complete"?go():addEventListener("load",go,{once:true})})();</script>
 </body>
 </html>
