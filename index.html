@@ -447,7 +447,7 @@ html.deck,html.deck body{max-width:100%;overflow-x:hidden}
   .bg,.fig,.rv{transition:none!important;animation:none!important;transform:none!important;opacity:1!important}
   .sweep{display:none}
 }
-@media (max-width:480px){#sndt.nav-hide{display:none!important}}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.dots{gap:14px}.dots a{position:relative}.dots a::after{content:'';position:absolute;inset:-7px}</style>
+.spk{display:none;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.spk .spk-b{fill:currentColor;fill-opacity:.15}.spk .spk-w{display:none}.snd[aria-pressed=true] .spk .spk-w{display:inline}.snd[aria-pressed=true] .spk .spk-x{display:none}@media (max-width:480px){#sndt.nav-hide{display:none!important}}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.dots{gap:14px}.dots a{position:relative}.dots a::after{content:'';position:absolute;inset:-7px}</style>
 </head>
 <body>
 
@@ -949,6 +949,6 @@ window.__act=(function(){const seen=new WeakMap();const io=new IntersectionObser
 </script>
 <script>addEventListener("load",()=>setTimeout(()=>document.querySelectorAll("img[data-src]").forEach(i=>{i.src=i.dataset.src}),1200));</script>
 
-<script>(()=>{const go=()=>document.querySelectorAll("img[data-ld]").forEach(i=>{i.src=i.dataset.ld;i.removeAttribute("data-ld")});document.readyState==="complete"?go():addEventListener("load",go,{once:true})})();</script>
+<script>(()=>{const go=()=>document.querySelectorAll("img[data-ld]").forEach(i=>{if(!i.getAttribute("src"))i.src=i.dataset.ld;i.removeAttribute("data-ld")});document.readyState==="complete"?go():addEventListener("load",go,{once:true})})();</script>
 </body>
 </html>
